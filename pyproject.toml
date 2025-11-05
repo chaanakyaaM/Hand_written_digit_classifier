@@ -1,7 +1,7 @@
 [project]
 name = "cnn"
 version = "0.1.0"
-description = "Add your description here"
+description = "A handwritten digit classifier that recognizes digits (0–9) drawn on a canvas using a MNIST CNN model built and trained from scratch."
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
