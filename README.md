@@ -1,11 +1,11 @@
 # Handwritten Digit Classifier 🧠✍️
 
-A custom-trained Convolutional Neural Network (CNN) model recognizes handwritten digits (0–9) drawn on a simple Tkinter canvas interface.
+A custom-trained Convolutional Neural Network (CNN) model that recognizes handwritten digits (0–9) drawn on a simple Tkinter canvas interface.
 
 ## 📘 Project Overview
 - This project allows users to draw digits on a canvas and predicts the number using a CNN model trained on MNIST dataset.  
 - The training process is done in **`cnn.ipynb`**, and the GUI-based digit recognition is implemented in **`main.py`**.
-- The **`CNN_200k_param_model.keras`** is the trained model used in `main.py`.
+- The **`CNN_225k_param_model.keras`** is the trained CNN model is used in `main.py`.
 - Tkinter-based application that loads the model, takes user input from the canvas, and displays predictions in real time.  
 
 ## 🧠 Model Details  
@@ -50,3 +50,47 @@ It takes a **28×28 grayscale image** as input and outputs probabilities for eac
 | **Inference Speed** | < 0.1 sec per image (CPU) |
 
 > The model trained for **10 epochs** using the **Adam optimizer**, achieving **98.5% accuracy** with a **loss of 0.0588** 
+
+
+## ⚙️ Installation & Setup 
+
+1. **Clone the repository**  
+   ```bash
+   git clone https://github.com/chaanakyaaM/Hand_written_digit_classifier.git
+   cd Hand_written_digit_classifier
+   ```
+2. Create a virtual environment
+    ```bash
+    python -m venv venv
+    # or
+    uv init
+    ```
+
+3. **Install Dependences**
+    ```bash
+    pip install -r requirements.txt 
+    # or
+    uv pip install -r requirements.txt
+    ```
+4. Run the application
+    ```bash
+    python main.py
+    # or 
+    uv run main.py
+    ```
+5. Run the notebook for model understanding/training
+    ```bash
+    jupyter notebook
+    ```
+
+
+## 🧱 Project Strcture
+```bash
+Hand_written_digit_classifier/
+│
+├── cnn.ipynb                    # Notebook for training the CNN model
+├── main.py                      # Tkinter app for digit drawing and prediction
+├── CNN_225k_param_model.keras   # Trained model weights
+├── README.md                    # Project documentation
+└── requirements.txt             # Dependencies (optional)
+```

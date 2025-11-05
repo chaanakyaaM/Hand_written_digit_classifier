@@ -73,7 +73,7 @@ def predict_values():
         val = np.expand_dims(val, axis=-1)  
 
         # Load model and predict
-        model = kr.models.load_model("CNN_200k_param_model.keras")
+        model = kr.models.load_model("CNN_225k_param_model.keras")
         prediction = model.predict(val)
         pred_number = np.argmax(prediction[0])
 
